@@ -1,84 +1,40 @@
-FLAME – Android-project (GitHub APK build)
+FLAME Android – Redesign v3
+===========================
 
-INHOUD
-- Android WebView-app met de FLAME-interface.
-- Foodlogboek met handmatige invoer en zoeken via Open Food Facts.
-- Trainingslogboek met oefening, datum, gewicht, sets en herhalingen.
-- Vergelijking van laatste registraties per oefening en berekening van trainingsvolume.
-- Taalkeuze Nederlands, Engels en Spaans.
-- Lokale opslag op het apparaat.
+Dit is de volledige Android-projectmap voor FLAME. De app gebruikt een lokale HTML-interface in een Android WebView.
 
-APK BOUWEN VIA GITHUB (ook mogelijk vanaf een Android-telefoon)
-1. Download dit ZIP-bestand en pak het uit.
-2. Maak op github.com een nieuw leeg repository aan.
-3. Upload de INHOUD van de map FLAME-Android naar de hoofdmap van het repository. Maak daarna in GitHub via Add file > Create new file het bestand .github/workflows/build-apk.yml aan en plak de workflow hieronder uit het meegeleverde project.
-4. Open het tabblad Actions en schakel Actions in als GitHub daarom vraagt.
-5. Kies 'Build FLAME APK' en druk op 'Run workflow'. Je kunt ook een commit naar main pushen.
-6. Wacht tot de workflow groen is.
-7. Open de geslaagde workflow-run, ga naar Artifacts en download FLAME-debug-apk.
-8. Pak het artifact-ZIP-bestand uit. Daarin staat app-debug.apk.
-9. Open app-debug.apk op je Samsung en geef zo nodig toestemming om vanuit die bron te installeren.
+Wat is bijgewerkt
+-----------------
+- Premium donkere vormgeving met rode FLAME-accenten, afgeronde kaarten en vijf hoofdnavigatieschermen.
+- Dashboard met calorieënring, macrodoelen, waterregistratie en trainingsstatus.
+- Voedingsregistratie met handmatige invoer, Open Food Facts zoeken, favorieten, maaltijden en barcodecamera (afhankelijk van Android WebView-ondersteuning).
+- Trainingsschema, oefeningencatalogus, trainingslogboek en progressieoverzichten.
+- Doelen aanpassen en lokale JSON-back-up exporteren/importeren.
+- Correctie van de weekplanning zodat een training wordt vastgelegd op de gekozen datum.
+- Correctie van de knop Oefening toevoegen: deze voegt nu een oefening toe aan de catalogus in plaats van meteen een trainingslog te maken.
 
-TECHNISCHE VEREISTEN
-- Android Gradle Plugin 8.7.3
-- Gradle 8.9
-- Java 17
-- Android SDK platform 35 (wordt in de GitHub runner geïnstalleerd via de Android build tooling/runner setup indien vereist)
+Projectstructuur
+----------------
+Upload de inhoud van deze ZIP naar de hoofdmap van de GitHub-repository. Behoud de mappenstructuur:
+- app/
+- .github/workflows/build-apk.yml
+- build.gradle
+- settings.gradle
+- gradle.properties
 
-BELANGRIJKE BEPERKINGEN
-- Dit is een debug-APK voor testen, geen Play Store-release.
-- Product zoeken gebruikt de Open Food Facts API en vereist internet.
-- Barcode-scannen gebruikt de WebView BarcodeDetector API. Niet elke Android/WebView-versie ondersteunt deze API; in dat geval moet je de zoekfunctie gebruiken. Cameratoestemming is vereist.
-- Voedingswaarden zijn afhankelijk van de volledigheid en juistheid van Open Food Facts-productgegevens.
-- De app slaat gegevens lokaal op in WebView-opslag. Verwijderen van appgegevens of herinstalleren kan lokale gegevens wissen; maak daarom zelf back-ups.
-- Taalvertalingen zijn gedeeltelijk; sommige dynamisch gegenereerde of foutmeldingen kunnen nog Nederlands tonen.
-- De progressievergelijking vergelijkt registraties per oefeningsnaam; voer dezelfde oefeningsnaam consequent in.
-- Er is geen account/cloudsynchronisatie en geen automatische fotoherkenning van maaltijden.
+APK bouwen via GitHub
+---------------------
+1. Upload/vervang de projectbestanden in de repository en commit naar main.
+2. Open GitHub Actions.
+3. Open de workflow Build FLAME APK en wacht op een groene status.
+4. Download het artifact FLAME-debug-apk en pak de ZIP uit.
+5. Installeer app-debug.apk op een Android-testtoestel.
 
-PROJECT STRUCTUUR
-Open FLAME-Android als projectmap in Android Studio als je lokaal wilt bouwen.
-De GitHub Actions-workflow staat in .github/workflows/build-apk.yml.
-
-
-WORKFLOW-INHOUD (plak in .github/workflows/build-apk.yml)
-
-name: Build FLAME APK
-
-on:
-  workflow_dispatch:
-  push:
-    branches: [ main ]
-
-permissions:
-  contents: read
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check out source
-        uses: actions/checkout@v4
-
-      - name: Set up Java 17
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-
-      - name: Set up Gradle 8.9
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: '8.9'
-
-      - name: Build debug APK
-        working-directory: .
-        run: gradle --no-daemon assembleDebug
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: FLAME-debug-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
-          if-no-files-found: error
-          retention-days: 30
-
+Teststatus en beperkingen
+-------------------------
+- JavaScript-syntaxcontrole: geslaagd.
+- AndroidManifest XML-controle: geslaagd.
+- De volledige Android/Gradle-build en praktijktest op een echt toestel moeten nog via GitHub Actions en een Android-telefoon worden uitgevoerd.
+- Productzoeken en barcode-opzoeken vereisen internet. Automatische barcodeherkenning is afhankelijk van de Android WebView-versie; handmatige barcode-invoer blijft beschikbaar.
+- Registraties worden lokaal op het toestel opgeslagen. Maak regelmatig een back-up via Profiel > Instellingen & gegevens.
+- Dit is een debug-APK, geen ondertekende Play Store-release.
