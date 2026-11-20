@@ -1,0 +1,215 @@
+{
+  "note": "AI-generated local exercise image assets 1-30. Check exercise names against the app catalog before production release; no Android APK build performed.",
+  "items": [
+    {
+      "number": 1,
+      "exercise": "Bench Press",
+      "file": "images/exercises/001-bench-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 2,
+      "exercise": "Incline Bench Press",
+      "file": "images/exercises/002-incline-bench-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 3,
+      "exercise": "Dumbbell Bench Press",
+      "file": "images/exercises/003-dumbbell-bench-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 4,
+      "exercise": "Chest Press Machine",
+      "file": "images/exercises/004-chest-press-machine.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 5,
+      "exercise": "Cable Fly",
+      "file": "images/exercises/005-cable-fly.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 6,
+      "exercise": "Push-up",
+      "file": "images/exercises/006-push-up.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 7,
+      "exercise": "Decline Bench Press",
+      "file": "images/exercises/007-decline-bench-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 8,
+      "exercise": "Incline Dumbbell Press",
+      "file": "images/exercises/008-incline-dumbbell-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 9,
+      "exercise": "Decline Dumbbell Press",
+      "file": "images/exercises/009-decline-dumbbell-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 10,
+      "exercise": "Pec Deck Machine",
+      "file": "images/exercises/010-pec-deck-machine.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 11,
+      "exercise": "Dumbbell Fly",
+      "file": "images/exercises/011-dumbbell-fly.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 12,
+      "exercise": "Low Cable Fly",
+      "file": "images/exercises/012-low-cable-fly.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 13,
+      "exercise": "High Cable Fly",
+      "file": "images/exercises/013-high-cable-fly.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 14,
+      "exercise": "Single Arm Cable Fly",
+      "file": "images/exercises/014-single-arm-cable-fly.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 15,
+      "exercise": "Chest Dips",
+      "file": "images/exercises/015-chest-dips.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 16,
+      "exercise": "Smith Machine Bench Press",
+      "file": "images/exercises/016-smith-machine-bench-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 17,
+      "exercise": "Floor Press",
+      "file": "images/exercises/017-floor-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 18,
+      "exercise": "Close Grip Bench Press",
+      "file": "images/exercises/018-close-grip-bench-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 19,
+      "exercise": "Wide Grip Bench Press",
+      "file": "images/exercises/019-wide-grip-bench-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 20,
+      "exercise": "Reverse Grip Bench Press",
+      "file": "images/exercises/020-reverse-grip-bench-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 21,
+      "exercise": "Dumbbell Pullover",
+      "file": "images/exercises/021-dumbbell-pullover.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 22,
+      "exercise": "Machine Incline Chest Press",
+      "file": "images/exercises/022-machine-incline-chest-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 23,
+      "exercise": "Plate Loaded Chest Press",
+      "file": "images/exercises/023-plate-loaded-chest-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 24,
+      "exercise": "Svend Press",
+      "file": "images/exercises/024-svend-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 25,
+      "exercise": "Landmine Chest Press",
+      "file": "images/exercises/025-landmine-chest-press.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 26,
+      "exercise": "Archer Push Up",
+      "file": "images/exercises/026-archer-push-up.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 27,
+      "exercise": "Diamond Push Up",
+      "file": "images/exercises/027-diamond-push-up.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 28,
+      "exercise": "Decline Push Up",
+      "file": "images/exercises/028-decline-push-up.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 29,
+      "exercise": "Explosive Push Up",
+      "file": "images/exercises/029-explosive-push-up.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    },
+    {
+      "number": 30,
+      "exercise": "Wide Push Up",
+      "file": "images/exercises/030-wide-push-up.jpg",
+      "format": "PNG",
+      "origin": "AI-generated in this conversation"
+    }
+  ]
+}
